@@ -41,9 +41,11 @@ window.onload = function() {
   // ★ここが決定打
   aladin.on('objectClicked', function(o) {
       if (o) {
-          document.getElementById("info").innerHTML =
-            "<h3>Virgo Cluster</h3>" +
-            "<img src='https://cdn-ak.f.st-hatena.com/images/fotolife/s/suushinagai/20260318/20260318151508.jpg' width='500'>";
+ document.getElementById("info").innerHTML =
+  "<div style='text-align:center; background:black; padding:20px;'>" +
+  "<h3 style='color:white;'>Virgo Cluster</h3>" +
+  "<img src='https://cdn-ak.f.st-hatena.com/images/fotolife/s/suushinagai/20260318/20260318151508.jpg' style='max-width:90%; height:auto; border:1px solid #444;'>" +
+  "</div>";
       }
   });
 
