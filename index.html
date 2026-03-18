@@ -9,24 +9,24 @@
 
 <div id="aladin-lite-div" style="width:100%;height:600px;"></div>
 
+<div id="aladin-lite-div" style="width:100%;height:600px;"></div>
+
 <script>
 window.onload = function() {
 
   var aladin = A.aladin('#aladin-lite-div', {
       survey: "P/DSS2/color",
       fov: 10,
-      target: "12:38:35.127 +12:51:10.61"
+      target: "189.6463625 12.852947"
   });
 
-  // カタログ作成
   var cat = A.catalog({
-  name: "My Objects",
-  sourceSize: 20,
-  color: 'red'
-});
+    name: "My Objects",
+    sourceSize: 20,
+    color: 'red'
+  });
   aladin.addCatalog(cat);
 
-  // オブジェクト追加（←これがポイント）
   var obj = A.source(
     189.6463625,
     12.852947,
