@@ -37,11 +37,15 @@ window.onload = function() {
 
   cat.addSources([obj]);
 
-  aladin.on('objectClicked', function(obj) {
-      if (obj) {
-          aladin.showPopup(obj);
+  // ★ここが決定打
+  aladin.on('objectClicked', function(o) {
+      if (o) {
+          document.getElementById("info").innerHTML =
+            "<h3>Virgo Cluster</h3>" +
+            "<img src='https://cdn-ak.f.st-hatena.com/images/fotolife/s/suushinagai/20260318/20260318151508.jpg' width='500'>";
       }
   });
+
 
 };
 </script>
