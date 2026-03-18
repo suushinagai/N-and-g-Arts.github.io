@@ -16,6 +16,17 @@ window.onload = function() {
       fov: 30,
       target: "12:38:35.127 +12:51:10.61"
   });
+  // あなたの画像をオーバーレイ表示
+var img = A.image({
+    name: "Virgo Cluster",
+    url: "https://cdn-ak.f.st-hatena.com/images/fotolife/s/suushinagai/20260318/20260318151508.jpg",
+    ra: 189.6463625,
+    dec: 12.852947,
+    fov: 26.063,
+    rotation: 0
+});
+
+aladin.addImage(img);
 };
 </script>
 
