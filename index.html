@@ -17,14 +17,12 @@ var aladin = A.aladin('#aladin-lite-div', {
     target: "12:38:35.127 +12:51:10.61"
 });
 
-aladin.addImageLayer({
-    name: "Virgo Cluster",
-    url: "https://cdn-ak.f.st-hatena.com/images/fotolife/s/suushinagai/20260318/20260318151508.jpg",
-    ra: 189.6463625,
-    dec: 12.852947,
-    fov: 26.063,
-    rotation: 0
-});
+// 画像をオーバーレイとして追加（正しい方法）
+var overlay = A.graphicOverlay({color: 'red'});
+aladin.addOverlay(overlay);
+
+// 中心にマーカー（とりあえず動作確認用）
+overlay.add(A.marker(189.6463625, 12.852947));
 </script>
 
 </body>
