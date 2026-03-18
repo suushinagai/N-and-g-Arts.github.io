@@ -14,8 +14,7 @@ window.onload = function() {
   var aladin = A.aladin('#aladin-lite-div', {
       survey: "P/DSS2/color",
       fov: 10,
-      target: "189.6463625 12.852947",
-      showPopup: true
+      target: "189.6463625 12.852947"
   });
 
   var cat = A.catalog({
@@ -29,14 +28,15 @@ window.onload = function() {
     189.6463625,
     12.852947,
     {
-      popupTitle: "Virgo Cluster",
-      popupDesc: "<img src='https://cdn-ak.f.st-hatena.com/images/fotolife/s/suushinagai/20260318/20260318151508.jpg' width='400'>"
+      data: {
+        name: "Virgo Cluster",
+        description: "<img src='https://cdn-ak.f.st-hatena.com/images/fotolife/s/suushinagai/20260318/20260318151508.jpg' width='400'>"
+      }
     }
   );
 
   cat.addSources([obj]);
 
-  // ★これが決定打
   aladin.on('objectClicked', function(obj) {
       if (obj) {
           aladin.showPopup(obj);
