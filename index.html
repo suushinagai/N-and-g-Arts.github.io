@@ -19,7 +19,11 @@ window.onload = function() {
   });
 
   // カタログ作成
-  var cat = A.catalog({name: "My Objects", sourceSize: 12});
+  var cat = A.catalog({
+  name: "My Objects",
+  sourceSize: 20,
+  color: 'red'
+});
   aladin.addCatalog(cat);
 
   // オブジェクト追加（←これがポイント）
