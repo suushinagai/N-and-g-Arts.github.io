@@ -18,14 +18,14 @@ window.onload = function() {
       target: "12:38:35.127 +12:51:10.61"
   });
 
-  // カタログ（銀河ラベル）
+  // 銀河カタログ
   aladin.addCatalog(A.catalogFromVizieR(
     "VII/118/ngc2000",
     "NGC",
     {color: 'red'}
   ));
 
-  // ★ここがポイント：画像をポップアップ表示（擬似的に重ねる）
+  // マーカー＋画像ポップアップ
   var marker = A.marker(189.6463625, 12.852947, {
     popupTitle: "Virgo Cluster",
     popupDesc: "<img src='https://cdn-ak.f.st-hatena.com/images/fotolife/s/suushinagai/20260318/20260318151508.jpg' width='400'>"
